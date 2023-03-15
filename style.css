@@ -1,0 +1,91 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+ /* and this below */
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  padding: 0 2em;
+}
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* General Styles*/
+.container {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 450px;
+}
+
+.content {
+    padding:2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2.order {
+  font-weight: bold;
+}
+
+p.text {
+  padding: 1rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.price-detail p:nth-child(1) {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  padding: .7rem 3rem; 
+}
+
+.cancel {
+  margin-top: 1rem;
+}
